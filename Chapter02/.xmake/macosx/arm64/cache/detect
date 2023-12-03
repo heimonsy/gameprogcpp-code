@@ -1,0 +1,14 @@
+{
+    ["detect.sdks.find_xcode"] = {
+        xcode = {
+            sdkdir = "/Applications/Xcode.app",
+            codesign_identity = "8AA22F19-FB5A-425A-AAC1-B9535344F7AA",
+            sdkver = "14.0",
+            target_minver = "13.6"
+        }
+    },
+    find_program = {
+        cmake = "/opt/homebrew/bin/cmake",
+        zig = false
+    }
+}

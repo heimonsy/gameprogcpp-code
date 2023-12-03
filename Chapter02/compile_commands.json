@@ -1,0 +1,56 @@
+[
+{
+  "directory": "/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/chapter02.dir/Main.cpp.o -c /Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02/Main.cpp",
+  "file": "/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02/Main.cpp",
+  "output": "CMakeFiles/chapter02.dir/Main.cpp.o"
+},
+{
+  "directory": "/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/chapter02.dir/Actor.cpp.o -c /Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02/Actor.cpp",
+  "file": "/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02/Actor.cpp",
+  "output": "CMakeFiles/chapter02.dir/Actor.cpp.o"
+},
+{
+  "directory": "/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/chapter02.dir/AnimSpriteComponent.cpp.o -c /Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02/AnimSpriteComponent.cpp",
+  "file": "/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02/AnimSpriteComponent.cpp",
+  "output": "CMakeFiles/chapter02.dir/AnimSpriteComponent.cpp.o"
+},
+{
+  "directory": "/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/chapter02.dir/BGSpriteComponent.cpp.o -c /Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02/BGSpriteComponent.cpp",
+  "file": "/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02/BGSpriteComponent.cpp",
+  "output": "CMakeFiles/chapter02.dir/BGSpriteComponent.cpp.o"
+},
+{
+  "directory": "/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/chapter02.dir/Component.cpp.o -c /Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02/Component.cpp",
+  "file": "/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02/Component.cpp",
+  "output": "CMakeFiles/chapter02.dir/Component.cpp.o"
+},
+{
+  "directory": "/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/chapter02.dir/Game.cpp.o -c /Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02/Game.cpp",
+  "file": "/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02/Game.cpp",
+  "output": "CMakeFiles/chapter02.dir/Game.cpp.o"
+},
+{
+  "directory": "/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/chapter02.dir/Math.cpp.o -c /Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02/Math.cpp",
+  "file": "/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02/Math.cpp",
+  "output": "CMakeFiles/chapter02.dir/Math.cpp.o"
+},
+{
+  "directory": "/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/chapter02.dir/Ship.cpp.o -c /Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02/Ship.cpp",
+  "file": "/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02/Ship.cpp",
+  "output": "CMakeFiles/chapter02.dir/Ship.cpp.o"
+},
+{
+  "directory": "/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/chapter02.dir/SpriteComponent.cpp.o -c /Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02/SpriteComponent.cpp",
+  "file": "/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02/SpriteComponent.cpp",
+  "output": "CMakeFiles/chapter02.dir/SpriteComponent.cpp.o"
+}
+]

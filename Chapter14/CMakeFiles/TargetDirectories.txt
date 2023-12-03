@@ -1,0 +1,3 @@
+/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter14/CMakeFiles/chapter14.dir
+/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter14/CMakeFiles/edit_cache.dir
+/Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter14/CMakeFiles/rebuild_cache.dir

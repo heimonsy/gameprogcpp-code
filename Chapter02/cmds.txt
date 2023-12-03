@@ -1,0 +1,5 @@
+-isystem /opt/homebrew/Cellar/sdl2/2.28.4/include/SDL2 -isystem /opt/homebrew/include -isystem /opt/homebrew/include/SDL2 -std=gnu++17 -arch arm64
+-isystem /opt/homebrew/Cellar/sdl2/2.28.4/include/SDL2 -isystem /opt/homebrew/include/SDL2 -std=gnu++17 -arch arm64
+
+-isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -F/Library/Developer/CommandLineTools/SDKs/MacOSX13.sdk/System/Library/Frameworks  -o CMakeFiles/chapter02.dir/Game.cpp.o -c /Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02/Game.cpp
+-isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/chapter02.dir/Game.cpp.o -c /Users/ziqian/Develop/heimonsy/games/gameprogcpp-code/Chapter02/Game.cpp

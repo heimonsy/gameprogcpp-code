@@ -7,7 +7,7 @@
 // ----------------------------------------------------------------
 
 #include "AudioSystem.h"
-#include <SDL/SDL_log.h>
+#include <SDL2/SDL_log.h>
 #include <fmod_studio.hpp>
 #include <fmod_errors.h>
 #include <vector>
@@ -56,7 +56,7 @@ bool AudioSystem::Initialize()
 	}
 
 	// Save the low-level system pointer
-	mSystem->getLowLevelSystem(&mLowLevelSystem);
+	// mSystem->getLowLevelSystem(&mLowLevelSystem);
 
 	// Load the master banks (strings first)
 	LoadBank("Assets/Master Bank.strings.bank");
