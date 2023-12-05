@@ -14,3 +14,4 @@ External/FMOD
 build
 xcshareddata
 CMakeCache.txt
+CMakeFiles
