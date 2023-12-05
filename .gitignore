@@ -15,3 +15,5 @@ build
 xcshareddata
 CMakeCache.txt
 CMakeFiles
+.cache
+compile_commands.json

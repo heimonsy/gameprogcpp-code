@@ -37,13 +37,11 @@ if (LINUX)
 endif()
 
 if (APPLE)
-    include_directories(${CMAKE_SOURCE_DIR}/../External/soil-local/build/include ${CMAKE_SOURCE_DIR}/../External/FMOD/api/core/inc ${CMAKE_SOURCE_DIR}/../External/FMOD/api/studio/inc)
+    include_directories(${CMAKE_SOURCE_DIR}/../External/soil-local/build-darwin-arm64/include ${CMAKE_SOURCE_DIR}/../External/FMOD/api/core/inc ${CMAKE_SOURCE_DIR}/../External/FMOD/api/studio/inc)
 
     find_package(SDL2_image REQUIRED)
     find_package(SDL2_ttf REQUIRED)
     find_package(SDL2_mixer REQUIRED)
 
-    target_link_libraries(${PROJECT_NAME} PRIVATE "-framework Cocoa" GLEW::GLEW SDL2::SDL2 SDL2_image::SDL2_image SDL2_ttf::SDL2_ttf SDL2_mixer::SDL2_mixer ${CMAKE_SOURCE_DIR}/../External/soil-local/build/lib/libSOIL.a ${CMAKE_SOURCE_DIR}/../External/FMOD/api/core/lib/libfmod.dylib ${CMAKE_SOURCE_DIR}/../External/FMOD/api/studio/lib/libfmodstudio.dylib)
-endif
-
-
+    target_link_libraries(${PROJECT_NAME} PRIVATE "-framework Cocoa" GLEW::GLEW SDL2::SDL2 SDL2_image::SDL2_image SDL2_ttf::SDL2_ttf SDL2_mixer::SDL2_mixer ${CMAKE_SOURCE_DIR}/../External/soil-local/build-darwin-arm64/lib/libSOIL.a ${CMAKE_SOURCE_DIR}/../External/FMOD/api/core/lib/libfmod.dylib ${CMAKE_SOURCE_DIR}/../External/FMOD/api/studio/lib/libfmodstudio.dylib)
+endif()
