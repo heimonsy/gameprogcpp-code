@@ -17,28 +17,33 @@ file(GLOB SRC_FILES *.cpp CMAKE_CONFIGURE_DEPENDS)
 
 find_package(SDL2 REQUIRED COMPONENTS SDL2)
 find_package(GLEW REQUIRED)
-find_package(rapidjson REQUIRED)
 
 add_executable(${PROJECT_NAME} Main.cpp ${SRC_FILES})
-# target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-
-include_directories(${CMAKE_SOURCE_DIR}/../external/soil-local/build/include ${CMAKE_SOURCE_DIR}/../external/FMOD/api/core/inc ${CMAKE_SOURCE_DIR}/../external/FMOD/api/studio/inc)
-
-# search libs
-find_package(SDL2_image REQUIRED)
-find_package(SDL2_ttf REQUIRED)
-find_package(SDL2_mixer REQUIRED)
 
 # include headers
 target_include_directories(${PROJECT_NAME} PUBLIC ${SDL2_INCLUDE_DIRS})
 target_include_directories(${PROJECT_NAME} PUBLIC ${GLEW_INCLUDE_DIRS})
-target_include_directories(${PROJECT_NAME} PUBLIC ${RAPIDJSON_INCLUDE_DIRS})
 
 
-# target_include_directories(${PROJECT_NAME} PUBLIC ${YAML_CPP_INCLUDE_DIR})
-target_link_libraries(${PROJECT_NAME} PRIVATE "-framework Cocoa" GLEW::GLEW SDL2::SDL2 SDL2_image::SDL2_image SDL2_ttf::SDL2_ttf SDL2_mixer::SDL2_mixer ${CMAKE_SOURCE_DIR}/../external/soil-local/build/lib/libSOIL.a ${CMAKE_SOURCE_DIR}/../external/FMOD/api/core/lib/libfmod.dylib ${CMAKE_SOURCE_DIR}/../external/FMOD/api/studio/lib/libfmodstudio.dylib)
+if (LINUX)
+    include_directories(${CMAKE_SOURCE_DIR}/../External/rapidjson/include ${CMAKE_SOURCE_DIR}/../External/soil-local/build-linux-amd64/include ${CMAKE_SOURCE_DIR}/../External/FMOD-linux/api/core/inc ${CMAKE_SOURCE_DIR}/../External/FMOD-linux/api/studio/inc)
 
-# find_library(COCOA_LIBRARY Cocoa)
+    INCLUDE(FindPkgConfig)
+    PKG_SEARCH_MODULE(SDL2IMAGE REQUIRED SDL2_image>=2.0.0)
+    PKG_SEARCH_MODULE(SDL2TTF REQUIRED SDL2_ttf>=2.0.0)
+    PKG_SEARCH_MODULE(SDL2MIXER REQUIRED SDL2_ttf>=2.0.0)
 
-# target_link_libraries(${PROJECT_NAME} PRIVATE ${COCOA_LIBRARY} GLEW::GLEW SDL2::SDL2 ${CMAKE_SOURCE_DIR}/../external/soil-local/build/lib/libSOIL.a)
+    target_link_libraries(${PROJECT_NAME} PRIVATE -lGL -lX11 GLEW::GLEW SDL2::SDL2 ${SDL2IMAGE_LIBRARIES} ${SDL2TTF_LIBRARIES} ${SDL2MIXER_LIBRARIES} ${CMAKE_SOURCE_DIR}/../External/soil-local/build-linux-amd64/lib/libSOIL.a ${CMAKE_SOURCE_DIR}/../External/FMOD-linux/api/core/lib/${CMAKE_SYSTEM_PROCESSOR}/libfmod.so ${CMAKE_SOURCE_DIR}/../External/FMOD-linux/api/studio/lib/${CMAKE_SYSTEM_PROCESSOR}/libfmodstudio.so)
+endif()
+
+if (APPLE)
+    include_directories(${CMAKE_SOURCE_DIR}/../External/soil-local/build/include ${CMAKE_SOURCE_DIR}/../External/FMOD/api/core/inc ${CMAKE_SOURCE_DIR}/../External/FMOD/api/studio/inc)
+
+    find_package(SDL2_image REQUIRED)
+    find_package(SDL2_ttf REQUIRED)
+    find_package(SDL2_mixer REQUIRED)
+
+    target_link_libraries(${PROJECT_NAME} PRIVATE "-framework Cocoa" GLEW::GLEW SDL2::SDL2 SDL2_image::SDL2_image SDL2_ttf::SDL2_ttf SDL2_mixer::SDL2_mixer ${CMAKE_SOURCE_DIR}/../External/soil-local/build/lib/libSOIL.a ${CMAKE_SOURCE_DIR}/../External/FMOD/api/core/lib/libfmod.dylib ${CMAKE_SOURCE_DIR}/../External/FMOD/api/studio/lib/libfmodstudio.dylib)
+endif
+
 
